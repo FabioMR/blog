@@ -16,9 +16,12 @@
   <body>
 
     <header class="site-header">
-      <%= link_to root_path do %>
-        <%= image_tag "logo.png", class: "site-header-logo" %>
-        <%= content_tag :h1, t("main.header.title"), class: "site-header-title" %>
+      <%= link_to root_path, class: "site-header-logo" do %>
+        <%= image_tag "logo.png" %>
+      <% end %>
+
+      <%= content_tag :h1, class: "site-header-title" do %>
+        <%= link_to t("main.header.title"), root_path %>
       <% end %>
     </header>
 

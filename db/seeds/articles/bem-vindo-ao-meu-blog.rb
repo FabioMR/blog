@@ -5,7 +5,7 @@ Article.create! do |article|
   article.description = <<-HTML
 <p>Meu nome é Fábio Rodrigues, sou formado em Ciências da Computação e desenvolvo profissionalmente desde os meus 17 anos. Gosto de dizer que nunca trabalhei com nada além disso. Criei este blog para compartilhar um pouco do meu conhecimento com a comunidade.</p>
 
-<p>Comecei minha carreira programando em Delphi, e assim foi por muitos anos. Também já me aventurei com outros linguagens (Java, .Net, PHP etc...). Até que um dia, eu conheci Ruby on Rails e não larguei mais.</p>
+<p>Comecei minha carreira programando em Delphi, e assim foi por muitos anos. Também já me aventurei com outras linguagens (Java, .Net, PHP etc...). Até que um dia, eu conheci Ruby on Rails e não larguei mais.</p>
 
 <p>Ruby on Rails é um framework extremamente poderoso, mas o que mais me fascina em Rails é o acesso à informação. Aprendi muito do que sei hoje lendo sua documentação e blogs. E esse blog é uma forma de retribuir tudo isso.</p>
 
