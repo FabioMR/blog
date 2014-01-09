@@ -4,12 +4,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-47005214-1', 'fabiomr.com.br');
-ga('send', 'pageview');
 
 $(document).on('page:change', function() {
-  if (window._gaq != null) {
-    return _gaq.push(['_trackPageview']);
-  } else if (window.pageTracker != null) {
-    return pageTracker._trackPageview();
-  }
+  ga('send', 'pageview');
 });
