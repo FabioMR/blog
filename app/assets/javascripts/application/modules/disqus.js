@@ -7,11 +7,7 @@ loadDisqus = function() {
     $("head").append(dsq);
   } else {
     DISQUS.reset({
-      reload: true,
-      config: function () {
-        this.page.identifier = "disqus_thread";
-        this.page.url = window.location.href;
-      }
+      reload: true
     });
   }
 }
