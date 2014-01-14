@@ -6,8 +6,6 @@ loadDisqus = function() {
     var dsq = $("<script type='text/javascript' async='' src='//" + disqus_shortname + ".disqus.com/embed.js'></script>");
     $("head").append(dsq);
   } else {
-    DISQUS.reset({
-      reload: true
-    });
+    DISQUS.reset({reload: true});
   }
 }
