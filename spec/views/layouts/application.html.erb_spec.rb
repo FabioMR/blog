@@ -1,8 +1,12 @@
 require "spec_helper"
 
-describe "rendering application layout" do
+describe "layouts/application" do
   before do
-    render :template => "layouts/application.html.erb"
+    render
+  end
+
+  it "displays title" do
+    expect(rendered).to have_title(t("main.site_title", page_title: ""))
   end
 
   it "displays header title" do
@@ -10,6 +14,7 @@ describe "rendering application layout" do
   end
 
   it "displays footer text" do
-    expect(rendered).to have_content(t("main.footer.follow_me_html"))
+    follow_me = Nokogiri::HTML(t("main.footer.follow_me_html")).inner_text
+    expect(rendered).to have_content(follow_me)
   end
 end

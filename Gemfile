@@ -42,6 +42,7 @@ end
 # GEM - Test
 #==================================================
 group :development, :test do
+  gem "minitest"
   gem "rspec-rails"
 end
 

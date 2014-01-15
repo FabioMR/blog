@@ -177,6 +177,7 @@ DEPENDENCIES
   compass-rails
   jquery-rails
   jquery-turbolinks
+  minitest
   mysql2
   nprogress-rails
   pry-meta
