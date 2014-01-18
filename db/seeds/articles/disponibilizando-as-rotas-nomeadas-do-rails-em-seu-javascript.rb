@@ -1,6 +1,7 @@
 Article.create! do |article|
   article.slug = "disponibilizando-as-rotas-nomeadas-do-rails-em-seu-javascript"
   article.title = "Disponibilizando as rotas nomeadas do Rails em seu JavaScript"
+  article.published_at = Date.new(2014, 1, 18)
   article.description = <<-HTML
 <p>Como todos devem saber, no Rails é possível definir nome para suas rotas.</p>
 <div class="gist" data-src="https://gist.github.com/FabioMR/0be3d6d8c6a15a4e1752.json"></div>
@@ -10,7 +11,7 @@ Article.create! do |article|
 
 <p>Bom, até aí nada demais. Acredito que a grande maioria já faz o uso correto. O grande problema é quando precisamos acessar as rotas no JavaScript.</p>
 
-<p>Nesses casos, vejo que muita gente ainda faz referência direto ao caminho relativo. E sempre que alteramos a forma de apresentar nossas rotas, o primeiro a quebrar são os JS.</p>
+<p>Nesses casos, vejo que muita gente ainda faz referência direta ao caminho relativo. E sempre que alteramos a forma de apresentar nossas rotas, os primeiros a quebrarem são os JS.</p>
 <div class="gist" data-src="https://gist.github.com/FabioMR/c16fecbc30fd89bd9fe6.json"></div>
 
 <h3>Solução</h3>
@@ -20,12 +21,12 @@ Article.create! do |article|
 <p>Como utilizar? Simples! Primeiro adicione em seu <strong>Gemfile</strong>:</p>
 <div class="gist" data-src="https://gist.github.com/FabioMR/b53addcff3e8ade0f75c.json"></div>
 
-<p>Em seguida adicione em seu <strong>application.js</strong>:</p>
+<p>Em seguida, adicione em seu <strong>application.js</strong>:</p>
 <div class="gist" data-src="https://gist.github.com/FabioMR/cda24fd4a96b13605eb8.json"></div>
 
-<p>Agora sempre que precisar utilizar alguma rota em seu JS:</p>
+<p>Agora, sempre que precisar utilizar alguma rota em seu JS:</p>
 <div class="gist" data-src="https://gist.github.com/FabioMR/2ece18d1d0bf2afefbab.json"></div>
 
-<p>Pronto! Simples não? Não há mais motivo para acessar sua rota da forma errada.</p>
+<p>Pronto! Simples, não? Portanto, não há mais motivo para acessar sua rota da forma errada.</p>
   HTML
 end
