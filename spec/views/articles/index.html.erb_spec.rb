@@ -6,7 +6,7 @@ describe "articles/index" do
       stub_model(Article, title: "Title-1", render_published_at: "Date-1", link_to_this_article: "Link-1"),
       stub_model(Article, title: "Title-2", render_published_at: "Date-2", link_to_this_article: "Link-2"),
     ])
-    assign(:years_coding, 10)
+    assign(:years_of_coding, 10)
 
     render
   end
