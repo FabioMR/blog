@@ -2,6 +2,8 @@ require "spec_helper"
 
 describe YearsOfCoding do
 
+  include Delorean
+
   context ".till_now" do
     it "returns 13 in 2014" do
       time_travel_to Date.new(2014, 1, 1)
