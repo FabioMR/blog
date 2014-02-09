@@ -1,6 +1,6 @@
-var GistTurbolinks;
+var Gist;
 
-GistTurbolinks = {
+Gist = {
   get_gist: function($gist) {
     var callback_name, script;
     callback_name = "c" + (Math.random().toString(36).substring(7));
@@ -30,11 +30,3 @@ GistTurbolinks = {
     });
   }
 };
-
-$(document).ready(function() {
-  return GistTurbolinks.load();
-});
-
-$(document).on('page:load', function() {
-  return GistTurbolinks.load();
-});

@@ -1,7 +1,8 @@
 module ApplicationHelper
 
-  def controller_and_action_name
-    "#{controller_name}-#{action_name}"
+  def data_route
+    controller_name = controller_path.gsub(/\//, "_")
+    "#{controller_name}##{action_name}"
   end
 
 end

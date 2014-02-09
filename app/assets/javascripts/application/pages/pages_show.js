@@ -1,5 +1,6 @@
-App.articles = {}
-
-App.articles["show"] = function() {
-  loadDisqus();
-}
+MyApp.articles = {
+  show: function(){
+    Gist.load();
+    DisqusLoader.load();
+  }
+};

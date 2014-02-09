@@ -3,8 +3,6 @@
 //==================================================
 //= require jquery
 //= require jquery_ujs
-//= require jquery.turbolinks
-//= require application/core/dispatcher
 
 
 //==================================================
@@ -12,6 +10,7 @@
 //==================================================
 //= require nprogress
 //= require nprogress-turbolinks
+//= require_directory ./application/vendors
 
 
 //==================================================
@@ -23,6 +22,7 @@
 //==================================================
 // PAGES
 //==================================================
+//= require application/pages/initialize
 //= require_directory ./application/pages
 
 

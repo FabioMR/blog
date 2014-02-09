@@ -25,7 +25,6 @@ gem "compass-rails"
 #==================================================
 gem "jquery-rails"
 gem "turbolinks"
-gem "jquery-turbolinks"
 gem "nprogress-rails"
 
 #==================================================

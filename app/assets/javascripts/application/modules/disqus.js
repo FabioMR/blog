@@ -1,11 +1,13 @@
 var DISQUS;
-var disqus_shortname = "fabiomr";
+var DisqusLoader;
 
-loadDisqus = function() {
-  if (DISQUS == undefined) {
-    var dsq = $("<script type='text/javascript' async='' src='//" + disqus_shortname + ".disqus.com/embed.js'></script>");
-    $("head").append(dsq);
-  } else {
-    DISQUS.reset({reload: true});
+DisqusLoader = {
+  load: function() {
+    if (DISQUS == undefined) {
+      var dsq = $("<script type='text/javascript' async='' src='//fabiomr.disqus.com/embed.js'></script>");
+      $("head").append(dsq);
+    } else {
+      DISQUS.reset({reload: true});
+    }
   }
-}
+};
