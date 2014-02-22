@@ -1,17 +1,29 @@
 require "spec_helper"
 
 describe ApplicationHelper do
-  describe "#controller_and_action_name" do
-    let(:fake_controller_name) { "CONTROLLER" }
-    let(:fake_action_name) { "ACTION" }
+  context "with namespace" do
+    describe "#data_route" do
+      before do
+        controller.stub(:controller_path).and_return("NAMESPACE/CONTROLLER_NAME")
+        controller.stub(:action_name).and_return("ACTION_NAME")
+      end
 
-    before do
-      controller.stub(:controller_name).and_return(fake_controller_name)
-      controller.stub(:action_name).and_return(fake_action_name)
+      it "returns controller and action name" do
+        expect(helper.data_route).to eql("NAMESPACE_CONTROLLER_NAME#ACTION_NAME")
+      end
     end
+  end
 
-    it "returns controller and action name" do
-      expect(helper.controller_and_action_name).to eql("#{fake_controller_name}-#{fake_action_name}")
+  context "without namespace" do
+    describe "#data_route" do
+      before do
+        controller.stub(:controller_path).and_return("CONTROLLER_NAME")
+        controller.stub(:action_name).and_return("ACTION_NAME")
+      end
+
+      it "returns controller and action name" do
+        expect(helper.data_route).to eql("CONTROLLER_NAME#ACTION_NAME")
+      end
     end
   end
 end
