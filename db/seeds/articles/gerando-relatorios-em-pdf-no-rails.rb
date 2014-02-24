@@ -1,8 +1,9 @@
 Article.create! do |article|
   article.slug = "gerando-relatorios-em-pdf-no-rails"
   article.title = "Gerando relatórios em PDF no Rails"
+  # article.published_at = Date.new(2014, 2, 22)
   article.description = <<-HTML
-<p>Uma das etapas mais importantes no desenvolvimento de um sistema, na minha opnião, é a geração de relatórios. E quando comecei a desenvolver sistemas Web, uma grande dúvida que tinha era justamente essa. Tive muita dificuldade em achar bons artigos relacionados ao tema. Portanto, neste artigo, vou mostrar um pouco como faço atualmente.</p>
+<p>Uma das etapas mais importantes no desenvolvimento de um sistema, na minha opinião, é a geração de relatórios. E quando comecei a desenvolver sistemas Web, uma grande dúvida que tinha era justamente essa. Tive muita dificuldade em achar bons artigos relacionados ao tema. Portanto, neste artigo, vou mostrar um pouco como faço atualmente.</p>
 
 <p>Se tratando de Rails, sempre procuro encontrar a solução mais simples possível. E a gem <a href='https://github.com/mileszs/wicked_pdf' target='_blank'>wicked_pdf</a> resolve nosso problema de forma extremamente elegante, sem precisar lidar com nenhuma DSL de geração de PDF.</p>
 
@@ -10,7 +11,7 @@ Article.create! do |article|
 
 <h3>Passo a passo</h3>
 
-<p>Certifique-se que vc tenha o <a href='http://wkhtmltopdf.org/' target='_blank'>wkhtmltopdf</a> instalado:</p>
+<p>Certifique-se que você tenha o <a href='http://wkhtmltopdf.org/' target='_blank'>wkhtmltopdf</a> instalado:</p>
 <div class="gist" data-src="https://gist.github.com/FabioMR/33f6164afa6230c11324.json"></div>
 
 <p>Adicione as seguintes gems em seu projeto:</p>
@@ -29,8 +30,10 @@ Article.create! do |article|
 
 <p>Note que a mesma rota está respondendo para <strong>2 mime types</strong> diferentes, e definimos a variável <strong>@articles</strong> apenas uma vez.</p>
 
-<h3>Exemplo</h3>
+<h3>Finalizando</h3>
 
 <p>Para facilitar o entendimento, criei um projeto de exemplo: <a href='https://github.com/FabioMR/wicked_pdf_example' target='_blank'>https://github.com/FabioMR/wicked_pdf_example</a>.</p>
+
+<p>E você, o que usa em seus projetos para gerar relatórios?</p>
   HTML
 end
