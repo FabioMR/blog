@@ -1,11 +1,11 @@
 Article.create! do |article|
   article.slug = "gerando-relatorios-em-pdf-no-rails"
   article.title = "Gerando relatórios em PDF no Rails"
-  # article.published_at = Date.new(2014, 2, 22)
+  article.published_at = Date.new(2014, 3, 10)
   article.description = <<-HTML
-<p>Uma das etapas mais importantes no desenvolvimento de um sistema, na minha opinião, é a geração de relatórios. E quando comecei a desenvolver sistemas Web, uma grande dúvida que tinha era justamente essa. Tive muita dificuldade em achar bons artigos relacionados ao tema. Portanto, neste artigo, vou mostrar um pouco como faço atualmente.</p>
+<p>Uma das etapas mais importantes no desenvolvimento de um sistema, na minha opinião, é a geração de relatórios. Quando comecei a desenvolver sistemas Web, uma grande dúvida que tinha era justamente essa. Tive muita dificuldade em achar bons artigos relacionados ao tema. Portanto, neste artigo, vou mostrar um pouco como faço atualmente.</p>
 
-<p>Se tratando de Rails, sempre procuro encontrar a solução mais simples possível. E a gem <a href='https://github.com/mileszs/wicked_pdf' target='_blank'>wicked_pdf</a> resolve nosso problema de forma extremamente elegante, sem precisar lidar com nenhuma DSL de geração de PDF.</p>
+<p>Em se tratando de Rails, sempre procuro encontrar a solução mais simples possível. A gem <a href='https://github.com/mileszs/wicked_pdf' target='_blank'>wicked_pdf</a> resolve nosso problema de forma extremamente elegante, sem precisar lidar com nenhuma DSL de geração de PDF.</p>
 
 <p>Com <a href='https://github.com/mileszs/wicked_pdf' target='_blank'>wicked_pdf</a>, simplesmente montamos nosso relatório em HTML/CSS, e ele se encarrega em transformá-lo em PDF. Essa conversão é feita de forma transparente, utilizando a ferramenta <a href='http://wkhtmltopdf.org/' target='_blank'>wkhtmltopdf</a>. Por baixo dos panos, ele sempre utiliza o motor do webkit para a conversão, garantindo assim, que nunca teremos problema com a renderização entre diferentes navegadores.</p>
 
