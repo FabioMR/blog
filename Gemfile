@@ -4,7 +4,7 @@ ruby "2.0.0"
 #==================================================
 # RAILS CORE
 #==================================================
-gem "rails", "4.1.0.rc1"
+gem "rails", "4.1.0.rc2"
 gem "mysql2"
 
 #==================================================
@@ -16,7 +16,7 @@ gem "active_decorator"
 #==================================================
 # ASSETS - Integration & Compressors
 #==================================================
-gem "sass-rails"
+gem "sass-rails", '~> 4.0.2'
 gem "uglifier"
 gem "compass-rails"
 
@@ -41,7 +41,6 @@ end
 # GEM - Test
 #==================================================
 group :development, :test do
-  gem "minitest"
   gem "rspec-rails"
 end
 
