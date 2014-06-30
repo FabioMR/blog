@@ -7,8 +7,8 @@ describe ArticlesController do
     let(:articles) { double(:articles) }
 
     before do
-      Article.stub(:published).and_return(articles)
-      YearsOfCoding.stub(:till_now).and_return(years_of_coding)
+      allow(Article).to receive(:published).and_return(articles)
+      allow(YearsOfCoding).to receive(:till_now).and_return(years_of_coding)
 
       get :index
     end
@@ -40,7 +40,7 @@ describe ArticlesController do
     let(:article) { mock_model(Article, title: article_title) }
 
     before do
-      Article.stub(:find_by_slug).with(slug).and_return(article)
+      allow(Article).to receive(:find_by_slug).and_return(article)
 
       get :show, slug: slug
     end

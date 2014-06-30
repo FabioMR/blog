@@ -4,8 +4,8 @@ describe ApplicationHelper do
   context "with namespace" do
     describe "#data_route" do
       before do
-        controller.stub(:controller_path).and_return("NAMESPACE/CONTROLLER_NAME")
-        controller.stub(:action_name).and_return("ACTION_NAME")
+        allow(controller).to receive(:controller_path).and_return("NAMESPACE/CONTROLLER_NAME")
+        allow(controller).to receive(:action_name).and_return("ACTION_NAME")
       end
 
       it "returns controller and action name" do
@@ -17,8 +17,8 @@ describe ApplicationHelper do
   context "without namespace" do
     describe "#data_route" do
       before do
-        controller.stub(:controller_path).and_return("CONTROLLER_NAME")
-        controller.stub(:action_name).and_return("ACTION_NAME")
+        allow(controller).to receive(:controller_path).and_return("CONTROLLER_NAME")
+        allow(controller).to receive(:action_name).and_return("ACTION_NAME")
       end
 
       it "returns controller and action name" do

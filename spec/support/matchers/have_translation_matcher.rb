@@ -3,11 +3,11 @@ RSpec::Matchers.define :have_translation do |text|
     expect(page).to have_content(t(text))
   end
 
-  failure_message_for_should do |page|
+  failure_message do |page|
     "expected to have translation #{text}"
   end
 
-  failure_message_for_should_not do |page|
+  failure_message_when_negated do |page|
     "not expected to have translation #{text}"
   end
 

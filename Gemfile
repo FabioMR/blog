@@ -41,7 +41,7 @@ end
 # GEM - Test
 #==================================================
 group :development, :test do
-  gem "rspec-rails", "~> 2.99"
+  gem "rspec-rails"
   gem "rspec-activemodel-mocks"
 end
 
