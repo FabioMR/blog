@@ -11,7 +11,7 @@ describe "Articles viewing" do
     end
 
     it "has 2 articles" do
-      expect(page.all(".article")).to have(2).itens
+      expect(page.all(".article").size).to eq(2)
     end
   end
 

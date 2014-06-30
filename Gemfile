@@ -4,7 +4,7 @@ ruby "2.0.0"
 #==================================================
 # RAILS CORE
 #==================================================
-gem "rails", "4.1.1"
+gem "rails", "~> 4.1.2"
 gem "mysql2"
 
 #==================================================
@@ -41,7 +41,8 @@ end
 # GEM - Test
 #==================================================
 group :development, :test do
-  gem "rspec-rails"
+  gem "rspec-rails", "~> 2.99"
+  gem "rspec-activemodel-mocks"
 end
 
 group :test do
