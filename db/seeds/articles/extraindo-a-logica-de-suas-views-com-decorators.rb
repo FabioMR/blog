@@ -1,13 +1,13 @@
 Article.create! do |article|
   article.slug = "extraindo-a-logica-de-suas-views-com-decorators"
   article.title = "Extraindo a lógica de suas views com decorators"
-  # article.published_at = Date.new(2014, 8, 1)
+  article.published_at = Date.new(2014, 8, 1)
   article.description = <<-HTML
 <p>Usamos decorators para estender um model (ou qualquer outro objeto) com novas funcionalidades e extrair a lógica das views. Dessa forma, melhoramos a legibilidade do código e facilitamos a escrita de testes.</p>
 
 <p>Acredito que a grande maioria dos desenvolvedores já estão familiarizados com decorators e muitas vezes deixam de utilizá-los por não conhecerem uma forma simples de fazer. Não que seja um pattern difícil de se utilizar, pelo contrário, existem diversas gems que nos auxiliam. Neste artigo vou mostrar como faço.</p>
 
-<p>Gosto muito do Rails justamente por ser extremamente simples, e não vejo muito problema em usar um código mais intrusivo quando bem feito e que seja em prol da simplicidade. Por esse motivo, minha gem favorita é <a href='https://github.com/amatsuda/active_decorator' target='_blank'>active_decorator</a>.</p>
+<p>Gosto muito do Rails justamente por ser extremamente simples, e não vejo muito problema em usar um código mais intrusivo quando bem feito e que seja em prol da simplicidade. Por esse motivo, minha gem favorita é a <a href='https://github.com/amatsuda/active_decorator' target='_blank'>active_decorator</a>.</p>
 
 <h3>Exemplo de código sem decorator</h3>
 <div class="gist" data-src="https://gist.github.com/FabioMR/7fda9e4deb2a0070572c.json"></div>
