@@ -7,7 +7,7 @@ Gist = {
     window[callback_name] = function(gist_data) {
       var html;
       delete window[callback_name];
-      html = '<link rel="stylesheet" href="https://gist.github.com' + encodeURI(gist_data.stylesheet) + '"></link>';
+      html = '<link rel="stylesheet" href="' + encodeURI(gist_data.stylesheet) + '"></link>';
       html += gist_data.div;
       $gist.html(html);
       return script.parentNode.removeChild(script);
