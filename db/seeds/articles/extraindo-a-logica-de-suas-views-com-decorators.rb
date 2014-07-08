@@ -1,7 +1,7 @@
 Article.create! do |article|
   article.slug = "extraindo-a-logica-de-suas-views-com-decorators"
   article.title = "Extraindo a lógica de suas views com decorators"
-  article.published_at = Date.new(2014, 8, 1)
+  article.published_at = Date.new(2014, 7, 1)
   article.description = <<-HTML
 <p>Usamos decorators para estender um model (ou qualquer outro objeto) com novas funcionalidades e extrair a lógica das views. Dessa forma, melhoramos a legibilidade do código e facilitamos a escrita de testes.</p>
 
